@@ -1,0 +1,87 @@
+.navbar{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ebe4e4;
+    margin: 0;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.navbar li {
+    display: inline;
+    margin: 0 20px;
+}
+
+.navbar a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-size: 20px;
+}
+
+.navbar a:hover{
+    text-decoration: underline;
+    background-color: paleturquoise;
+}
+
+h2 {
+    text-align: center;
+    /* background-color: aqua; */
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.video-container video{
+    width: 500px;
+    border-radius: 50px;
+}
+
+.form-container{
+    display: block;
+    width: 350px;
+    margin: 0 auto;
+    background-color: #eee3e3;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.form-container label {
+    display: block;
+    font-size: 12px;
+    margin-bottom: 3px;
+}
+
+.form-container input, textarea{
+    width: 100%;
+    padding:6px;
+    margin-bottom: 10px;
+    border: 1px solid #aaa;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+
+.form-container textarea{
+    height: 60px;
+    resize: none;
+}
+
+button {
+    width: 100%;
+    background-color: green;
+    color: white;
+    border:none;
+    padding: 8px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+button:hover{
+    background-color: #acf272;
+    color:black;
+}

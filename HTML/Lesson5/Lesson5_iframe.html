@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 5 - iframes</title>
+    <style>
+        iframe, video, audio{
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iframe</h1>
+
+    <h2>BMW M5</h2>
+
+    <iframe width="1200" height="950" src="https://www.youtube.com/embed/o5_B9VDgtho?si=hvNRNjcKwmUwCkP0?controls=0" 
+    title="YouTube video player" frameborder="30" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; web-share"
+    controls=0
+    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <h2>Программирование</h2>
+    <video width="560" height="315" controls muted loop poster="https://www.mooc.org/hubfs/applications-of-computer-programming.jpg">
+        <source src="video1.mp4" type="video/mp4">
+        <source src="video1.mpeg" type="video/mpeg">
+        <source src="video1.avi" type="video/avi">
+    </video>
+
+    <h2>Audio</h2>
+
+    <audio controls>
+        <source src="myaudio.mp3" type="audio/mpeg">
+        <source src="myaudio.acc" type="audio/acc">
+        <source src="myaudio.ogg" type="audio/ogg">
+        Ваш браузер не поддерживает формат аудио!
+    </audio>
+
+    <h2>Площадь Бишкека - Ала Тоо</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2923.864086276251!2d74.60109467645383!3d42.875712771149686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389eb7dcbdacf87b%3A0xfc7d686ab988f348!2z0J_Qu9C-0YnQsNC00Ywg0JDQu9CwLdCi0L7Qvi4!5e0!3m2!1sru!2smy!4v1760114699191!5m2!1sru!2smy" 
+    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+    <h2>Сайт о фотографировании</h2>
+    <iframe src="https://fotokto.ru/"
+    width="500"
+    height="250"
+    style="border: 2px solid red;"
+    allowfullscreen
+    ></iframe>
+
+
+    <video controls>
+        <source src="https://assets.mixkit.co/viadrpzfpq3x6u57bjivyniq7939" type="video/mp4">
+    </video>
+</body>
+</html>

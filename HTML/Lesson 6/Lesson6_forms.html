@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 6 - Forms</title>
+
+    <style>
+        label, input {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input[type="radio"], label[for="male"], label[for="female"]{
+            display: inline-block;
+            margin-top: 5px;
+        }
+
+        input[type="checkbox"], label[for="animal"]{
+            display: inline-block;
+            margin-top: 5px;
+        }
+
+        #headermain{
+            color:blue;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="headermain">Регистрация пользователя</h1>
+
+    <form action="registration.php" method="get">
+        <fieldset>
+        <legend>Информация пользователя</legend>
+        <label for="firstname">Имя:</label>
+        <input type="text" name="firstname" id="firstname"> 
+
+        <label for="lastname">Фамилия:</label>
+        <input type="text" name="lastname" id="lastname" placeholder="Введите фамилию">
+
+        <label for="gender">Пол</label>
+        
+        <input type="radio" name="gender" id="gender" value="male">Мужчина
+        <input type="radio" name="gender" id="gender" value="female" checked>Женщина
+        
+        <br>
+        <label for="animal">Выберите животныех</label>
+        <input type="checkbox" name="animal" id="animal" value="dog">Собака
+        <input type="checkbox" name="animal" id="animal" value="cat" checked>Кошка
+
+        <label for="email">Email:</label>
+        <input type="email" name="emailid" id="email" placeholder="Введите почту с @">
+
+        <label for="about">Расскажите о себе</label>
+        <textarea name="about" id="about" cols="50" rows="15"></textarea>
+        
+        <label for="color">Выберите любимый цвет</label>
+        <input type="color" name="color">
+        
+
+        <label for="date">Дата рождения</label>
+        <input type="date" name="date">
+
+        <label for="selectcar">Выберите модель авто:</label>
+        <select name="car" id="car" size="3" multiple>
+            <option value="BMW">BMW</option>
+            <option value="Toyota">Toyota</option>
+            <option value="Lexus" selected>Lexus</option>
+            <option value="Mercedes">Mercedes</option>
+            <option value="Lada" selected>Lada</option>
+            <option value="BYD">BYD</option>
+            <option value="Tesla">Tesla</option>
+        </select>
+
+        <label for="children">На каком вы классе?</label>
+        <input type="number" name="classnum" id="classnum">
+
+        <label for="range">Выберите свой размер?</label>
+        <input type="range" name="sizeclose" id="sizeclose" min="0" max="150">
+
+        <label for="password">Пароль:</label>
+        <input type="password" name="psswd" id="psswd">
+
+        <!-- <input type="submit" value="Подтвердить"> -->
+        <button type="button" onclick="alert('Регистрация прошла успешно!')">Регистрация</button>
+        </fieldset>
+        
+    </form>
+
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!-- 
+Создайте html файл и назовите “aboutfrontend.html”
+В ней создайте подобного рода html файл:
+Заметьте, что:
+• В ней присутствует заголовок 1 уровня – шрифт у нее белый, фон синего цвета
+и сам заголовок находится по центру
+• Под заголовком расположены три изображения об html css js, все они находятся
+рядом и имеют одинаковый размер
+• За изображением следует описание о Frontend, где источником служит данная
+ссылка из Википедии https://en.wikipedia.org/wiki/Front-end_web_development
+Текст этого определение имеет размер в 20px и имеет стиль Arial
+• После текста с определением следует цитата Стива Джобса
+• Адреса и контактные данные вам следует оформить в специальном тэге
+-->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>About Frontend HTML</title>
+</head>
+
+<style>
+	.image-container {
+		display: flex;
+		justify-content: center;
+		gap: 15px;
+		margin-bottom: 10px;
+	}
+
+	img {
+		width:250px;
+		height: 250px;
+		margin: 5px;
+	}
+</style>
+
+<body>
+
+<h1 style="background: blue; text-align: center; color: white;">Frontend - HTML </h1>
+
+<div class="image-container">
+	<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1024px-HTML5_logo_and_wordmark.svg.png" alt="HTML">
+
+	<img src="https://world-it.ro/images/logo_CSS.png" alt="CSS" style="width: 230px; height: 270px;">
+
+	<img src="https://user-images.githubusercontent.com/84471000/195156744-8a21399b-f952-4765-b03c-c5feeb2c5fbe.svg" style="width:250px; height:230px ;">
+</div>
+<p>
+	There are several tools and platforms, such as WordPress, Joomla, and Drupal, available that can be used to develop the front end of a website.[5]
+HyperText Markup Language
+Main articles: HTML and Markup language
+
+HyperText Markup Language (HTML) is the modern standard for displaying and structuring web content across the internet.[6] HTML defines what elements will be displayed on a website, and how they will be arranged. All major web browsers are designed to interpret HTML, and most modern websites serve HTML to the user.[7] Hypertext is text displayed on a computer with references to other text, these references (or links,) are termed "hyperlinks." When an internet user interacts with a hyperlinked item, the website serves the user the linked data. This data can be another HTML web-page, JavaScript, or anything else. The latest major release of HTML is HTML5, originally published on October 28, 2014 as a W3C recommendation.[8][9] 
+</p>
+
+<blockquote>
+	<q>Программировать должен каждый</q> - С. Джобс
+</blockquote>
+<hr>
+<h4> Хотели бы обучится программированию?</h4>
+<address>
+	<p>ул. Лев Толстой 77</p>
+	<p> 055512324</p>
+	<p> frontend@gmail.com</p>
+</address>
+</body>
+</html>

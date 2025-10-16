@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid black;
+        }
+
+        table {
+            outline: none;
+            border-style: hidden;
+        }
+
+        img{
+            width: 50px;
+            height: 50px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        table{
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        th, td {
+            text-align: left;
+            padding-left: 3px;
+            padding-right: 10px;
+        }
+
+        
+        thead {
+            background-color: green;
+            color: white;
+        }
+
+        .odd-row {
+            background-color: white;
+        }
+
+        .even-row {
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+    <table width="50%">
+        <caption>Countries</caption>
+        <thead>
+            <tr>
+                <th>Contact Name</th>
+                <th>City</th>
+                <th>Country</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr class="odd-row">
+                <td>Maria Andres</td>
+                <td>Berlin</td>
+                <td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAARVBMVEX///8AAADdAAD/zgBDQ0M9AADlAAD4pQD/0QD/2EPJycn3ycn/9Mn/ywDU1NQzMzPYyckrAAD4zsn95sn3nwD/9tT/1jOdllPYAAAA/UlEQVR4nO3PR1IDQQDAwIUlOuf/P5XLmrsPFKVx9wukaQIAAAAAAAAAAADgMbv925j2u+Vw9TKqlcM8h30O+xz2Oexz2Oewz2Gfwz6HfQ77HPY57HPY57DPYZ/DPod9Dvsc9j3P4eH4PqbjYTlcf4xqfT98HZXDPod9Dvsc9jnsc9jnsM9hn8M+h30O+xz2Oexz2Oewz2Gfwz6HfQ77HPbdD0//HfJnTsvh+fI5pst5OdzMX2OaN/fD7TymrcM8h30O+xz2Oexz2Oewz2Gfwz6HfQ77HPY57HPY57DPYZ/DPod9Dvsc9v0eXm/fY7pdJwAAAAAAAAAAAAAe8wNUWwNAnBUo5wAAAABJRU5ErkJggg==" alt="Germany"></td>
+            </tr>
+
+            <tr class="even-row">
+                <td>Anna Trujillio</td>
+                <td>Mexico</td>
+                <td><img src="https://cdn-icons-png.flaticon.com/512/630/630615.png " alt="Mexico"></td>
+            </tr>
+
+            <tr class="odd-row">
+                <td>Azat Tumanov</td>
+                <td>Bishkek</td>
+                <td><img src="https://cdn-icons-png.flaticon.com/512/630/630686.png" alt="Kyrgyzstan"></td>
+            </tr>
+
+            <tr class="even-row">
+                <td>Thomas Hardy</td>
+                <td>London</td>
+                <td><img src="https://uxwing.com/wp-content/themes/uxwing/download/flags-landmarks/united-kingdom-flag-icon.png" alt="Great Britain"></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

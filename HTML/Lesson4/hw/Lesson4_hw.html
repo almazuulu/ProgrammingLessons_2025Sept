@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 5 - Div Block hw</title>
+
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+
+        div{
+            border-top: 2px solid red;
+            border-bottom: 2px solid red;
+            border-left: none;
+            border-right: none;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin-top: 5px;
+            text-align: center;
+            width: 100vw;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            text-align: center;
+            color: black;
+        }
+
+        .main_h1 {
+            margin-top: 5px;
+            color: white;
+            background-color: blue;
+        }
+
+        div ol, 
+        div ul {
+            display: inline-block;
+            text-align: left;
+            margin: 0;
+            padding: 0;
+            color: white;
+        }
+
+        .block_1 {
+            background-color: blueviolet;
+        }
+
+        .block_2 {
+            background-color: green;
+        }
+
+        .block_3 {
+            background-color: yellow;
+        }
+        
+        .block_4 {
+            background-color: pink;
+        }
+
+        .block_3 > ol, 
+        .block_4 > ol {
+            color: black;
+        }
+
+        .carblock li{
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body style="background-image: url('https://avatars.mds.yandex.net/i?id=59fb6dd0c0dc298a479efac562c7347e979c1e87-3746294-images-thumbs&n=13');">
+    <h1 class="main_h1">Список для подготовки к зиме</h1>
+
+    <h1>Одежда</h1>
+
+    <div class="block_1">
+        <ul>
+            <li>Шапка</li>
+            <li>Куртка</li>
+            <li>Перчатки</li>
+            <li>Ботинки</li>
+        </ul>
+    </div>
+
+    <h1>Автомобиль</h1>
+
+    <div class="block_2 car_block">
+        <ol>
+            <li>Антифриз</li>
+            <li>Зимние шины</li>
+            <li>Шипы</li>
+            <li>Прицеп</li>
+        </ol>
+    </div>
+
+    <h1>Дом</h1>
+
+    <div class="block_3">
+        <ol type="a">
+            <li>Отопление</li>
+            <li>Обогреватель</li>
+            <li>Гор вода</li>
+            <li>Утепление</li>
+        </ol>
+    </div>
+
+    <h1>Государство</h1>
+
+    <div class="block_4">
+        <ol type="I">
+            <li>Снег машины</li>
+            <li>Перевод часов</li>
+            <li>Повышение зп</li>
+            <li>Горячие завтрак</li>
+        </ol>
+    </div>
+    
+</body>
+</html>
