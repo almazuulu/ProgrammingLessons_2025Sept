@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson1 - CSS Border</title>
+
+    <style>
+
+        p {
+            font-size: large;
+        }
+
+        .par1 {
+            /* border: 7px solid red; */
+            /*border-style: solid dashed dotted double; */
+         
+            border-top-style: solid;
+            border-right-style: dashed;
+            border-bottom-style: dotted;
+            border-left-style: double;
+        
+            border-color: red blue green black;
+            border-width: 4px 5px 7px 10px;
+
+        }
+
+        .par2 {
+          /*  border: 2px dashed blue; */
+          border-left: 4px double green;
+          border-right: 6px groove blue;
+          padding-left: 20px;
+          background-color: aquamarine;
+        }
+
+        .par3 {
+            border: 7px dotted green;
+        }
+
+        .par4 {
+            border: 5px inset blueviolet;
+        }
+
+        .par5 {
+            border: 7px outset blue;
+        }
+
+        .par6 {
+            border: 7px double brown;
+            border-radius: 30px;
+            padding-left: 15px;
+        }
+
+        .par7 {
+            border: 7px groove black;
+        }
+
+        .par8 {
+            border: 7px ridge red;
+        }
+
+        .par9 {
+            border: 7px none red;
+        }
+
+        .make_border {
+            border: 5px groove green;
+            border-radius: 5px;
+        }
+
+        .make_font_bigger {
+            font-size: 30px;
+            color: blue;
+        }
+
+        .add_padding {
+            padding: 20px;
+        }
+
+        .make_background {
+            background-color: plum;
+        }
+    </style>
+
+
+</head>
+<body>
+    <p class="par1">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+    <p class="par2">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+    <p class="par3">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+    <p class="par4">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+    <p class="par5">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+    <p class="par6">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+    <p class="par7">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+    <p class="par8">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+    <h1 class="make_border"> Какая-то статья</h1>
+
+    <p class="make_border make_font_bigger">
+        1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque nemo saepe voluptas placeat neque labore illo totam quo 
+        sint enim perferendis quis eaque ipsa expedita, facere impedit fugit error aliquam?
+    </p>
+
+    <p class="make_border make_background make_font_bigger add_padding">
+        2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque nemo saepe voluptas placeat neque labore illo totam quo 
+        sint enim perferendis quis eaque ipsa expedita, facere impedit fugit error aliquam?
+    </p>
+   
+    
+
+</body>
+</html>
