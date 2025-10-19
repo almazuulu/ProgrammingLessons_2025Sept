@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 2 CSS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <style>
+        div{
+            display: block;
+            margin: auto;
+            width: 50%;
+            margin-bottom:20px;
+        }
+
+        div > h2{
+            width: 200px;
+            margin: 10px auto;
+            text-align: center;
+            background-color: blue;
+            color: white;
+        }
+
+        div > img {
+            border: 3px solid green;
+            padding: 5px;
+            width: 350px;
+            height: 300px;
+            display: block;
+            margin: auto;
+        }
+
+        div > p{
+            text-align: center;
+            padding: 15px;
+            font-size: 150%;
+        }
+
+        .tokyo_block{
+            border: 5px solid red;
+        }
+
+        .tokyo_block > p{
+            font-family: "Saira", sans-serif;
+            font-optical-sizing: auto;
+        }
+
+        .austria_block{
+            border: 5px double purple;
+        }
+
+        .austria_block > p{
+            font-family: "Nothing You Could Do", cursive;
+            font-weight: 400;
+        }
+            .material-symbols-outlined {
+              font-variation-settings:
+              'FILL' 0,
+              'wght' 400,
+              'GRAD' 0,
+              'opsz' 24
+            }
+  
+    </style>
+</head>
+<body>
+    <div class="tokyo_block">
+        <h2><span class="material-symbols-outlined">
+            wb_twilight
+            </span> Токио</h2>
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/4b/5d/10/caption.jpg?w=1400&h=1400&s=1&cx=1005&cy=690&chk=v1_2ed86f729380ea073850" alt="tokyo">
+        <p>Tokyo,[a] officially the Tokyo Metropolis,[b] is the capital and most populous 
+            city in Japan. With a population of over 14 million in the city proper in 2023, 
+            it is one of the most populous urban areas in the world. The Greater Tokyo Area, 
+            which includes Tokyo and parts of six neighboring prefectures, is the 
+            most populous metropolitan area in the world, with 41 million residents as of 2024. </p>
+    </div>
+
+
+    <div class="austria_block">
+        <h2> Австрия</h2>
+        <img src="https://heritagehotelsofeurope.com/wp-content/uploads/2020/06/hallstatt-village-austria-TX59P3L-1-scaled.jpg" alt="austria">
+        <p>
+            Austria,[e] formally the Republic of Austria,[f] 
+            is a landlocked country in Central Europe, 
+            lying in the Eastern Alps.[15] It is a federation of nine states, 
+            of which the capital Vienna is the most populous city and state. 
+            Austria is bordered by Germany to the northwest, the Czech Republic to the north, 
+            Slovakia to the northeast, Hungary to the east, Slovenia and Italy to the south, 
+            and Switzerland and Liechtenstein to the west. The country occupies 
+            an area of 83,879 km2 (32,386 sq mi) and has a population of around 9 million.[10] 
+        </p>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 3 - Style table</title>
+
+    <style>
+        table{
+            width: 100%;
+        }
+
+        th, td{
+            border-bottom: 4px solid green;
+        }
+
+        td{
+            text-align: center;
+            height: 30px;
+            vertical-align: bottom;
+        }
+
+        table > caption
+        {
+            caption-side: bottom;
+        }
+
+        tr:hover{
+            background-color: cyan;
+            font-size: 18px;
+        }
+
+        tr:nth-child(even){
+            background-color: antiquewhite;
+        }
+
+        thead{
+            background-color: green;
+            color: white;
+        }
+
+        th{
+            height: 50px;
+        }
+
+        img{
+            float: right;
+            width: 10%;
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Данные людей</caption>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Second Name</th>
+                <th>Age</th>
+                <th>Address</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Adilet</td>
+                <td>Omurzakov</td>
+                <td>25</td>
+                <td>Lev Tolstoy 77</td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>Uson</td>
+                <td>Asanov</td>
+                <td>35</td>
+                <td>Lev Tolstoy 123</td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>Sergei</td>
+                <td>Brin</td>
+                <td>32</td>
+                <td>Panfilova 77</td>
+            </tr>
+
+            <tr>
+                <td>4</td>
+                <td>Aigerim</td>
+                <td>Nazarova</td>
+                <td>22</td>
+                <td>Jibek Jolu 12</td>
+            </tr>
+
+        </tbody>
+    </table>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At adipisci atque nam. Aspernatur quaerat minima nobis dicta repellat libero, totam quo iusto similique quam ipsam quae quia culpa cupiditate recusandae?
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. At adipisci atque nam. Aspernatur quaerat minima nobis dicta repellat libero, <img src="https://officelife.media/upload/iblock/9e3/9e31b3a178cf3145965cdf2a3ded72fe.jpg" alt="ferrari"> totam quo iusto similique quam ipsam quae quia culpa cupiditate recusandae?
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. At adipisci atque nam. Aspernatur quaerat minima nobis dicta repellat libero, totam quo iusto similique quam ipsam quae quia culpa cupiditate recusandae?
+
+    </p>
+</body>
+</html>
