@@ -1,0 +1,22 @@
+.block1 {
+    margin: 20px 10px 0 30px;
+    text-transform: capitalize; 
+    letter-spacing: 5px;     
+    line-height: 30px;         
+}
+.block2 {
+    padding: 20px;
+    text-transform: capitalize;
+    letter-spacing: 5px;
+    line-height: 30px;
+}
+
+.block3 {
+    border-style: double solid groove dashed; /* четыре стороны */
+    border-width: 10px;
+    border-color: red blue green purple;
+    text-transform: capitalize;
+    letter-spacing: 5px;
+    line-height: 30px;
+} 
+  
