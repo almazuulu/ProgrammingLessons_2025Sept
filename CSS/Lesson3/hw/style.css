@@ -1,0 +1,53 @@
+h1, table{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table{
+    border-collapse: collapse;
+    width: 70%;
+    margin: 30px auto;
+    font-size: 18px;
+}
+
+caption{
+    padding: 20px 0;
+}
+
+th, td{
+    border: 2px solid blue;
+    padding: 10px 15px;
+}
+
+th{
+    background-color: rgb(61, 61, 228);
+    color: white;
+}
+
+tbody{
+    background-color: pink;
+}
+
+tr:hover{
+    background-color: yellow;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+tfoot td{
+    background-color: #3399ff;
+    font-weight: bold;
+    font-size: 22px;
+    color: white;
+}
+
+.red-icon{
+    color: red;
+}
+
+.icon-font {
+    font-size: 20;
+}
+
+
+

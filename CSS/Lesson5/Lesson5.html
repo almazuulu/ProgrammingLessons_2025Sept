@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 5 - Position, Overflow, Display</title>
+
+    <style>
+        div{
+            border: 1px solid green;
+            margin-top: 30px;
+        }
+
+
+        .block1{
+            position: static;
+            border: 2px solid red;
+            width: 50%;
+        }
+
+        .block2{
+            position: static;
+            border: 2px solid purple;
+            width: 50%;
+        }
+
+        .block3{
+            
+            border: 2px solid brown;
+            bottom: 0;
+            right: 0;
+            width: 60%;
+            background-color: cyan;
+            color:red;
+        }
+
+        .block5{
+            position: relative;
+            width: 50%;
+            background-color: antiquewhite;
+        }
+
+        .block5 > p{
+            color: blue;
+        }
+
+        .block6{
+            position: relative;
+            width: 100%;
+            border: 2px double red;
+        }
+
+        .block6 > p{
+            color: blueviolet;
+        }
+
+        .block7{
+            position: absolute;
+            width: 50%;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="block1">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, ullam nisi! Sint et voluptatum accusamus facilis. Ipsum sint minima expedita repudiandae, saepe qui numquam autem similique aspernatur quas quae ipsa.
+        </p>
+    </div>
+
+    <div >
+        <div class="block2">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, ullam nisi! Sint et voluptatum accusamus facilis. Ipsum sint minima expedita repudiandae, saepe qui numquam autem similique aspernatur quas quae ipsa.
+            </p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, ullam nisi! Sint et voluptatum accusamus facilis. Ipsum sint minima expedita repudiandae, saepe qui numquam autem similique aspernatur quas quae ipsa.
+            </p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, ullam nisi! Sint et voluptatum accusamus facilis. Ipsum sint minima expedita repudiandae, saepe qui numquam autem similique aspernatur quas quae ipsa.
+            </p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, ullam nisi! Sint et voluptatum accusamus facilis. Ipsum sint minima expedita repudiandae, saepe qui numquam autem similique aspernatur quas quae ipsa.
+            </p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, ullam nisi! Sint et voluptatum accusamus facilis. Ipsum sint minima expedita repudiandae, saepe qui numquam autem similique aspernatur quas quae ipsa.
+            </p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, ullam nisi! Sint et voluptatum accusamus facilis. Ipsum sint minima expedita repudiandae, saepe qui numquam autem similique aspernatur quas quae ipsa.
+            </p>
+
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, ullam nisi! Sint et voluptatum accusamus facilis. Ipsum sint minima expedita repudiandae, saepe qui numquam autem similique aspernatur quas quae ipsa.
+            </p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, ullam nisi! Sint et voluptatum accusamus facilis. Ipsum sint minima expedita repudiandae, saepe qui numquam autem similique aspernatur quas quae ipsa.
+            </p>
+
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, ullam nisi! Sint et voluptatum accusamus facilis. Ipsum sint minima expedita repudiandae, saepe qui numquam autem similique aspernatur quas quae ipsa.
+            </p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, ullam nisi! Sint et voluptatum accusamus facilis. Ipsum sint minima expedita repudiandae, saepe qui numquam autem similique aspernatur quas quae ipsa.
+            </p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, ullam nisi! Sint et voluptatum accusamus facilis. Ipsum sint minima expedita repudiandae, saepe qui numquam autem similique aspernatur quas quae ipsa.
+            </p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, ullam nisi! Sint et voluptatum accusamus facilis. Ipsum sint minima expedita repudiandae, saepe qui numquam autem similique aspernatur quas quae ipsa.
+            </p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, ullam nisi! Sint et voluptatum accusamus facilis. Ipsum sint minima expedita repudiandae, saepe qui numquam autem similique aspernatur quas quae ipsa.
+            </p>
+        </div>
+    </div>
+
+    <div class="block3">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, ullam nisi! Sint et voluptatum accusamus facilis. Ipsum sint minima expedita repudiandae, saepe qui numquam autem similique aspernatur quas quae ipsa.
+        </p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, ullam nisi! Sint et voluptatum accusamus facilis. Ipsum sint minima expedita repudiandae, saepe qui numquam autem similique aspernatur quas quae ipsa.
+        </p>
+    </div>
+
+    <div class="block4">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, ullam nisi! Sint et voluptatum accusamus facilis. Ipsum sint minima expedita repudiandae, saepe qui numquam autem similique aspernatur quas quae ipsa.
+        </p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, ullam nisi! Sint et voluptatum accusamus facilis. Ipsum sint minima expedita repudiandae, saepe qui numquam autem similique aspernatur quas quae ipsa.
+        </p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, ullam nisi! Sint et voluptatum accusamus facilis. Ipsum sint minima expedita repudiandae, saepe qui numquam autem similique aspernatur quas quae ipsa.
+        </p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, ullam nisi! Sint et voluptatum accusamus facilis. Ipsum sint minima expedita repudiandae, saepe qui numquam autem similique aspernatur quas quae ipsa.
+        </p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, ullam nisi! Sint et voluptatum accusamus facilis. Ipsum sint minima expedita repudiandae, saepe qui numquam autem similique aspernatur quas quae ipsa.
+        </p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, ullam nisi! Sint et voluptatum accusamus facilis. Ipsum sint minima expedita repudiandae, saepe qui numquam autem similique aspernatur quas quae ipsa.
+        </p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, ullam nisi! Sint et voluptatum accusamus facilis. Ipsum sint minima expedita repudiandae, saepe qui numquam autem similique aspernatur quas quae ipsa.
+        </p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, ullam nisi! Sint et voluptatum accusamus facilis. Ipsum sint minima expedita repudiandae, saepe qui numquam autem similique aspernatur quas quae ipsa.
+        </p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, ullam nisi! Sint et voluptatum accusamus facilis. Ipsum sint minima expedita repudiandae, saepe qui numquam autem similique aspernatur quas quae ipsa.
+        </p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, ullam nisi! Sint et voluptatum accusamus facilis. Ipsum sint minima expedita repudiandae, saepe qui numquam autem similique aspernatur quas quae ipsa.
+        </p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, ullam nisi! Sint et voluptatum accusamus facilis. Ipsum sint minima expedita repudiandae, saepe qui numquam autem similique aspernatur quas quae ipsa.
+        </p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, ullam nisi! Sint et voluptatum accusamus facilis. Ipsum sint minima expedita repudiandae, saepe qui numquam autem similique aspernatur quas quae ipsa.
+        </p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, ullam nisi! Sint et voluptatum accusamus facilis. Ipsum sint minima expedita repudiandae, saepe qui numquam autem similique aspernatur quas quae ipsa.
+        </p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, ullam nisi! Sint et voluptatum accusamus facilis. Ipsum sint minima expedita repudiandae, saepe qui numquam autem similique aspernatur quas quae ipsa.
+        </p>
+    </div>
+
+    <div class="block5">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, ullam nisi! Sint et voluptatum accusamus facilis. Ipsum sint minima expedita repudiandae, saepe qui numquam autem similique aspernatur quas quae ipsa.
+        </p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, ullam nisi! Sint et voluptatum accusamus facilis. Ipsum sint minima expedita repudiandae, saepe qui numquam autem similique aspernatur quas quae ipsa.
+        </p>
+
+        <div class="block6">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, ullam nisi! Sint et voluptatum accusamus facilis. Ipsum sint minima expedita repudiandae, saepe qui numquam autem similique aspernatur quas quae ipsa.
+            </p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, ullam nisi! Sint et voluptatum accusamus facilis. Ipsum sint minima expedita repudiandae, saepe qui numquam autem similique aspernatur quas quae ipsa.
+            </p>
+
+            <div class="block7">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, ullam nisi! Sint et voluptatum accusamus facilis. Ipsum sint minima expedita repudiandae, saepe qui numquam autem similique aspernatur quas quae ipsa.
+                </p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, ullam nisi! Sint et voluptatum accusamus facilis. Ipsum sint minima expedita repudiandae, saepe qui numquam autem similique aspernatur quas quae ipsa.
+                Block 7
+                </p>
+            </div>
+        </div>
+    </div>
+
+ 
+</body>
+</html>

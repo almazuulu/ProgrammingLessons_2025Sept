@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example Position</title>
+
+    <style>
+        .block1{
+            position: static;
+            background-color: lightblue;
+            padding: 10px;
+        }
+
+        .block2{
+            background: pink;
+            padding: 10px;
+        }
+
+        .block3{
+            position: relative;
+            background-color: blue;
+            padding: 10px;
+            left:50px;
+            top: 10px;
+            width: 50%;
+        }
+
+        .block4{
+            background: pink;
+            padding: 10px;
+        }
+
+
+        .block5{
+            margin-top: 20px;
+            position: relative;
+            background-color: green;
+            padding: 30px;
+            width:500px;
+            height: 640px;
+        }
+
+        .block6{
+            top:50px;
+            right:30px;
+            width: 320px;
+            height: 220px;
+            background: tomato;
+            padding: 10px;
+            position: absolute;
+        }
+
+        .block-menu{
+            position: sticky;
+            top: 0;
+            margin: 10px auto 0 auto;
+            width: 60%;
+            display: block;
+            background-color: aqua;
+            padding: 10px;
+            z-index: 50;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .block-menu ul{
+            list-style: none;
+            margin: 10px;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        .block-menu > ul > li{
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        .block-menu > ul > li a{
+            text-decoration: none;
+            font-size: 15px;
+            color: black;
+            font-weight: 400;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="block-menu">
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">ContactUS</a></li>
+            <li><a href="#">Service</a></li>
+        </ul>
+    </div>
+
+
+    <div class="block1">
+        Я обычный блок static
+    </div>
+
+    <div class="block2">
+        Я обычный блок static
+    </div>
+
+    <div class="block3">
+        Я обычный блок Relative
+    </div>
+
+    <div class="block4">
+        Я обычный блок static
+    </div>
+
+    <div class="block5">
+        Я обычный блок Relative
+
+        <div class="block6">
+            Я обычный блок Absolute
+        </div>
+    </div>
+
+   
+
+</body>
+</html>

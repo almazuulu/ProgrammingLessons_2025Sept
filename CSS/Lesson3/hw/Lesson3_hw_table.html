@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 3 - HTML Table css</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <h1>Дневник</h1>
+
+    <table>
+        <caption>Таблица оценок</caption>
+        <thead>
+            <tr>
+                <th>ID <i class="fa-solid fa-hashtag icon-font"></i></th>
+                <th>ФИО <i class="fa-solid fa-user icon-font"></i></th>
+                <th>Средняя оценка <i class="fa-solid fa-marker icon-font"></i></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Иван Иванов</td>
+                <td>4.7</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Мурат Муратов</td>
+                <td>3.9</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Айсулуу Абдрахманова</td>
+                <td>4.2</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td colspan="2">ИТОГО <i class="fa-solid fa-heart-crack red-icon icon-font"></i></td>
+            <td>4.3</td>
+        </tfoot>
+    </table>
+</body>
+</html>

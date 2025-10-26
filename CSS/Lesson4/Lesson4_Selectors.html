@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 4 - Selectors</title>
+
+    <style>
+        div p{
+            background-color: rgb(0, 255, 85);
+            color: blue;
+        }
+
+        .block1 > p{
+            text-decoration: underline;
+        }
+
+        /*div + p{
+            background-color: pink;
+            color: blueviolet;
+        }*/
+
+        .block1 ~ p{
+            background-color: pink;
+            color: blueviolet;
+            font-weight: bold;
+        }
+
+        div > span > p{
+            border:2px solid blue;
+        }
+
+        div:hover{
+            background-color: aqua;
+        }
+
+        .par4 + p{
+            border:3px double purple;
+        }
+
+        .par4 + p::first-line{
+            text-transform: uppercase;
+        }
+
+        .block1 p:first-child{
+            color: red;
+            border: 5px dotted green;
+        }
+
+        .block1 h2:first-of-type{
+            color: pink;
+            text-decoration: line-through;
+        }
+
+        .par4::first-letter{
+            font-size: 30px;
+            color: blue;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="block1">
+        <p>Par 1 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem, voluptatem provident? Officiis iusto, itaque nesciunt corrupti, similique dolor dolorum nihil vel expedita nobis dicta, laboriosam recusandae illum ex libero quia!</p>
+        <p>Par 1.1 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem, voluptatem provident? Officiis iusto, itaque nesciunt corrupti, similique dolor dolorum nihil vel expedita nobis dicta, laboriosam recusandae illum ex libero quia!</p>
+        <p>Par 1.2 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem, voluptatem provident? Officiis iusto, itaque nesciunt corrupti, similique dolor dolorum nihil vel expedita nobis dicta, laboriosam recusandae illum ex libero quia!</p>
+        <p>Par 2 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem, voluptatem provident? Officiis iusto, itaque nesciunt corrupti, similique dolor dolorum nihil vel expedita nobis dicta, laboriosam recusandae illum ex libero quia!</p>
+        <h2>First h2</h2>
+        <h2>Second h2</h2>
+        <p>ASdasdasd</p>
+        <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates inventore laboriosam possimus, architecto laudantium excepturi accusantium nam repudiandae dolore quam alias nobis ipsa voluptatibus ratione harum quae, saepe recusandae ea. <span> <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate dolorem perferendis ipsa consequatur in, error necessitatibus maiores voluptatem inventore fugiat, rerum fugit earum cum quia dolores. Porro esse adipisci exercitationem!</p></span></p></div>
+        <span><p>Par 3 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem, voluptatem provident? Officiis iusto, itaque nesciunt corrupti, similique dolor dolorum nihil vel expedita nobis dicta, laboriosam recusandae illum ex libero quia!</p></span>
+    </div>
+
+    <p class="par4">Par 4 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur ducimus accusamus provident praesentium est qui quia repellendus, ab doloribus nesciunt modi asperiores eaque, expedita excepturi voluptatum pariatur ullam aliquam maiores.</p>
+    <p>Par 5 Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ipsum nemo maxime corporis in enim voluptatem, quam dicta officia facilis atque dolorem ipsam provident aliquam cumque quisquam, aspernatur, tenetur veritatis?</p>
+    <p>Par 6 Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ipsum nemo maxime corporis in enim voluptatem, quam dicta officia facilis atque dolorem ipsam provident aliquam cumque quisquam, aspernatur, tenetur veritatis?</p>
+
+</body>
+</html>
